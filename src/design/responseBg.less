@@ -1,0 +1,9 @@
+.bg-image(@url) {
+  background-image: url('@{url}.png');
+  
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('@{url}@2x.png');
+  }
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

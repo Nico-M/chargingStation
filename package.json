@@ -1,0 +1,32 @@
+{
+  "name": "yilaidian",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "echarts": "^5.6.0",
+    "lodash": "^4.17.21",
+    "motion": "^12.4.10",
+    "vue": "^3.5.13",
+    "vue-echarts": "^7.0.3",
+    "vue3-scroll-seamless": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^22.13.8",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "less": "^4.2.2",
+    "typescript": "~5.7.2",
+    "unocss": "^66.1.0-beta.3",
+    "vite": "^6.2.0",
+    "vite-svg-loader": "^5.1.0",
+    "vue-tsc": "^2.2.4"
+  }
+}
