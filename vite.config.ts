@@ -6,7 +6,7 @@ import svgLoader from "vite-svg-loader";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/yilaidian",
+  base: "/chargingStation",
   plugins: [vue(), UnoCSS(), svgLoader()],
   resolve: {
     alias: {
