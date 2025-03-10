@@ -1,0 +1,24 @@
+{
+  "name": "Yilaidian",
+  "title": "Charging Data Platform",
+  "location": "China",
+  "description": "A platform for charging electric vehicles.",
+  "companyName": "(Hubei) Tech.",
+  "realTime": "Real-time Statistics",
+  "totalStations": "Total Charging Stations",
+  "totalChargers": "Total Charging Piles",
+  "totalChargingVolume": "Total Charging Volume",
+  "totalChargingDuration": "Total Charging Duration",
+  "cityStationRatio": "Charging Station Ratio by City",
+  "cityChargingVolume": "Charging Volume by City",
+  "todayIncome": "Today's Total Income",
+  "todayOrders": "Today's Total Orders",
+  "agentRealtimeIncome": "Agent's Real-time Income",
+  "income12Hours": "12-hour Total Income Timeline",
+  "cityTransactionRanking": "City Charging Transaction Ranking (Today)",
+  "unit": {
+    "count": "count",
+    "hour": "hours",
+    "kW": "kW"
+  }
+}

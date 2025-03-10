@@ -11,10 +11,13 @@ import ChargeRank from "./components/ChargeRank/index.vue";
 import bgScreen from "@/assets/images/bg-map.png";
 import bgScreen2X from "@/assets/images/bg-map@2x.png";
 import { useDevicePixelRatio } from "./hooks/useDevicePixelRatio";
+import { useI18n } from "vue-i18n";
 
 const {devicePixelRatio} = useDevicePixelRatio();
-const incomingOfToday = 3882.71;
+const incomingOfToday = '3,882.71';
 const orderOfToday = 208;
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -36,7 +39,7 @@ const orderOfToday = 208;
           <div class="today-account flex justify-around gap-6 mt-9">
             <div class="incoming-of-today">
               <div class="title text-center font-bold text-6">
-                今日收益总数(元)
+                {{t('todayIncome')}}
               </div>
               <div class="value text-center font-bold text-13 rounded-lg">
                 {{incomingOfToday}}
@@ -44,7 +47,7 @@ const orderOfToday = 208;
             </div>
             <div class="order-of-today">
               <div class="title text-center font-bold text-6">
-                今日日订单数(笔)
+                {{t('todayOrders')}}
               </div>
               <div class="value text-center font-bold text-13 rounded-lg">
                 {{orderOfToday}}

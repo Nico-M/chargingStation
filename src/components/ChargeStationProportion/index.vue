@@ -1,5 +1,5 @@
 <template>
-  <CardItem title="各市充电站占比">
+  <CardItem :title="t('cityStationRatio')">
     <v-chart class="chart" :option="option" />
   </CardItem>
 </template>
@@ -18,6 +18,7 @@ import type {
   TooltipComponentOption,
   LegendComponentOption,
 } from "echarts/components";
+import { useI18n } from "vue-i18n";
 
 use([TooltipComponent, LegendComponent, PieChart, CanvasRenderer]);
 
@@ -30,6 +31,9 @@ interface CityColorPellet {
   color: string,
   value: number
 }
+
+const { t } = useI18n();
+
 const colorPellet: CityColorPellet[] = [
   {
     name: '石家庄',

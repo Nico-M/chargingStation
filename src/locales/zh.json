@@ -1,0 +1,24 @@
+{
+    "name": "宜来电",
+    "title": "充电桩数据信息平台",
+    "location":"全国",
+    "description": "一个为电动汽车充电的平台。",
+    "companyName": "智能科技",
+    "realTime": "实时统计",
+    "totalStations": "充电站总数",
+    "totalChargers": "充电桩总数",
+    "totalChargingVolume": "累计充电总量",
+    "totalChargingDuration": "累计充电总时长",
+    "cityStationRatio": "各市充电站占比",
+    "cityChargingVolume": "各市累计充电量统计",
+    "todayIncome": "今日收益总数(元)",
+    "todayOrders": "今日日订单数(笔)",
+    "agentRealtimeIncome": "代理商实时收益统计",
+    "income12Hours": "12小时总收入时间轴",
+    "cityTransactionRanking": "各市充电交易额排行(今日)",
+    "unit":{
+        "count": "个",
+        "hour": "小时",
+        "kW": "千瓦"
+    }
+}

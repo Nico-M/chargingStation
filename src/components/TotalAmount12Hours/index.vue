@@ -1,5 +1,5 @@
 <template>
-  <CardItem title="12小时总收入时间轴">
+  <CardItem :title="t('income12Hours')">
     <v-chart :option="option" class="chart" />
   </CardItem>
 </template>
@@ -18,6 +18,7 @@ import type {
 } from "echarts/charts";
 import type { GridComponentOption } from "echarts/components";
 import VChart from "vue-echarts";
+import { useI18n } from "vue-i18n";
 
 use([GridComponent, LineChart, PictorialBarChart, CanvasRenderer]);
 
@@ -25,6 +26,7 @@ type EChartsOption = ComposeOption<
   GridComponentOption | LineSeriesOption | PictorialBarSeriesOption
 >;
 
+const { t } = useI18n();
 const customerTimeBreakPoint = [
   "00:00",
   "00:30",

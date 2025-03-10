@@ -67,7 +67,7 @@ body {
   background: linear-gradient(to right, #030e0f, #041b1a);
   height: 100vh;
   width: 100vw;
-  user-select: none;
+  /* user-select: none; */
 }
 
 :root{

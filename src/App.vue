@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import PlatformMap from '@/EntryBak/PlatformMap.vue';
-// import Platform from './Platform.vue';
+// import PlatformMap from '@/EntryBak/PlatformMap.vue';
+import Platform from './Platform.vue';
 </script>
 
 <template>
-  <PlatformMap />
-  <!-- <Platform /> -->
+  <!-- <PlatformMap /> -->
+  <Platform />
 </template>

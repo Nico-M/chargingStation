@@ -1,5 +1,5 @@
 <template>
-  <CardItem title="各市累计充电量统计">
+  <CardItem :title="t('cityChargingVolume')">
     <v-chart class="chart" :option="option" />
   </CardItem>
 </template>
@@ -16,6 +16,7 @@ import type { BarSeriesOption } from "echarts/charts";
 import type { GridComponentOption } from "echarts/components";
 import VChart from "vue-echarts";
 import type { BarDataItemOption } from "echarts/types/src/chart/bar/BarSeries.js";
+import { useI18n } from "vue-i18n";
 
 use([GridComponent, BarChart, CanvasRenderer]);
 
@@ -25,6 +26,8 @@ interface CityInfo {
   name: string;
   value: number | (() => BarDataItemOption);
 }
+
+const { t } = useI18n();
 const mockData: CityInfo[] = [
   {
     name: "宜昌",

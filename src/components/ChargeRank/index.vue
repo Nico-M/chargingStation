@@ -1,5 +1,5 @@
 <template>
-  <CardItem title="各市充电交易额排行(今日)">
+  <CardItem :title="t('cityTransactionRanking')">
     <div class="flex flex-col gap-2">
       <CityChargeItem
         v-for="item in chargeCitiesList"
@@ -14,6 +14,7 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
 import CardItem from "../CardItem.vue";
 import CityChargeItem from "./CityChargeItem.vue";
 
@@ -31,6 +32,8 @@ const chargeCitiesList: ChargeItemInfo[] = [
   { cityName: "成都", chargeAmount: 3645.7, percentage: 50, color: "#2df8f8" },
   { cityName: "长沙", chargeAmount: 999.65, percentage: 20, color: "#faa9ac" },
 ];
+
+const { t } = useI18n();
 </script>
 
 <style scoped></style>

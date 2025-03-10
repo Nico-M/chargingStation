@@ -1,6 +1,6 @@
 <template>
   <div class="proxy-realtime-statistics">
-    <BorderHeader title="代理商实时收益统计" />
+    <BorderHeader :title="t('agentRealtimeIncome')" />
     <vue3ScrollSeamless
       :dataList="proxyStatistics"
       class="wrap mt-2"
@@ -28,7 +28,9 @@ import type { IncomingItemProps } from "./IncomingItem.vue";
 import BorderHeader from "../BorderHeader.vue";
 // @ts-ignore
 import { vue3ScrollSeamless } from 'vue3-scroll-seamless';
+import { useI18n } from "vue-i18n";
 
+const { t } = useI18n();
 const classOptions = {
   limitMoveNum: 5,
   singleHeight: 50,
