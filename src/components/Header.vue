@@ -66,6 +66,9 @@ onMounted(() => {
     
 const toggleLanguage = () => {
     locale.value = isCh.value ? 'en' : 'zh';
+    
+    localStorage.setItem("localLanguage", locale.value);
+    window.location.reload(); // Uncommenting to reload the page after language change
 };
 
 onBeforeUnmount(() => {

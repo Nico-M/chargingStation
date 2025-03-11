@@ -9,17 +9,23 @@ import i18n from "./i18n";
 
 // dayjs.locale("zh-cn");
 
+//get local language setting fro local storage
+const localLanguage = localStorage.getItem("localLanguage") as LocalLocale || 'en';
+
 type LocalLocale = "zh" | "en";
-function setupDayjsLocale(locale: LocalLocale) {
+function setupLocalLocale(locale: LocalLocale) {
   if (locale === "zh") {
     dayjs.locale("zh-cn");
+    i18n.global.locale.value = "zh";
   } else {
     dayjs.locale("en");
+    i18n.global.locale.value = "en";
   }
 }
 
 
-setupDayjsLocale("en"); // or "en" based on your application needs
+
+setupLocalLocale(localLanguage);
 
 const app = createApp(App);
 
@@ -29,8 +35,3 @@ app.use(i18n);
 
 
 app.mount("#app");
-
-watchEffect(() => {
-    const currentLocale = i18n.global.locale as unknown as  LocalLocale;
-    setupDayjsLocale(currentLocale);
-  });
